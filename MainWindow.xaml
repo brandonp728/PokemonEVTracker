@@ -1,0 +1,53 @@
+﻿<Window x:Class="EVTracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EVTracker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="357.843" Width="563.235">
+    <Grid>
+        <TextBox x:Name="HP" HorizontalAlignment="Left" Height="23" Margin="201,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Atk" HorizontalAlignment="Left" Height="23" Margin="201,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Def" HorizontalAlignment="Left" Height="23" Margin="201,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SpAtk" HorizontalAlignment="Left" Height="23" Margin="201,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SpDef" HorizontalAlignment="Left" Height="23" Margin="201,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Speed" HorizontalAlignment="Left" Height="23" Margin="201,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="31" Margin="361,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="30" Margin="377,46,0,0" VerticalAlignment="Top" Width="82" Click="Save_Click"/>
+        <Button x:Name="Load" Content="Load" HorizontalAlignment="Left" Height="30" Margin="377,84,0,0" VerticalAlignment="Top" Width="82" Click="Load_Click"/>
+        <Button x:Name="HP4" Content="4 HP" HorizontalAlignment="Left" Height="27" Margin="3,229,0,0" VerticalAlignment="Top" Width="59" Click="hp_Click"/>
+        <Button x:Name="hp1" Content="1 HP" HorizontalAlignment="Left" Height="27" Margin="3,200,0,0" VerticalAlignment="Top" Width="59" Click="hp_Click"/>
+        <Button x:Name="HP8" Content="8 HP" HorizontalAlignment="Left" Height="27" Margin="3,258,0,0" VerticalAlignment="Top" Width="59" Click="hp_Click"/>
+        <Button x:Name="HP12" Content="12 HP" HorizontalAlignment="Left" Height="27" Margin="3,288,0,0" VerticalAlignment="Top" Width="59" Click="hp_Click"/>
+        <Button x:Name="Atk4" Content="4 Atk" HorizontalAlignment="Left" Height="27" Margin="79,229,0,0" VerticalAlignment="Top" Width="59" Click="atk_Click"/>
+        <Button x:Name="Atk1" Content="1 Atk" HorizontalAlignment="Left" Height="27" Margin="79,200,0,0" VerticalAlignment="Top" Width="59" Click="atk_Click"/>
+        <Button x:Name="Atk8" Content="8 Atk" HorizontalAlignment="Left" Height="27" Margin="79,258,0,0" VerticalAlignment="Top" Width="59" Click="atk_Click"/>
+        <Button x:Name="Atk12" Content="12 Atk" HorizontalAlignment="Left" Height="27" Margin="79,288,0,0" VerticalAlignment="Top" Width="59" Click="atk_Click"/>
+        <Button x:Name="Def4" Content="4 Def" HorizontalAlignment="Left" Height="27" Margin="161,229,0,0" VerticalAlignment="Top" Width="59" Click="def_Click"/>
+        <Button x:Name="Def1" Content="1 Def" HorizontalAlignment="Left" Height="27" Margin="161,200,0,0" VerticalAlignment="Top" Width="59" Click="def_Click"/>
+        <Button x:Name="Def8" Content="8 Def" HorizontalAlignment="Left" Height="27" Margin="161,258,0,0" VerticalAlignment="Top" Width="59" Click="def_Click"/>
+        <Button x:Name="Def12" Content="12 Def" HorizontalAlignment="Left" Height="27" Margin="161,288,0,0" VerticalAlignment="Top" Width="59" Click="def_Click"/>
+        <Button x:Name="Spatk4" Content="4 SpAtk" HorizontalAlignment="Left" Height="27" Margin="316,228,0,0" VerticalAlignment="Top" Width="59" Click="spatk_Click"/>
+        <Button x:Name="Spatk1" Content="1 SpAtk" HorizontalAlignment="Left" Height="27" Margin="316,199,0,0" VerticalAlignment="Top" Width="59" Click="spatk_Click"/>
+        <Button x:Name="Spatk8" Content="8 SpAtk" HorizontalAlignment="Left" Height="27" Margin="316,257,0,0" VerticalAlignment="Top" Width="59" Click="spatk_Click"/>
+        <Button x:Name="Spatk12" Content="12 SpAtk" HorizontalAlignment="Left" Height="27" Margin="316,287,0,0" VerticalAlignment="Top" Width="59" Click="spatk_Click"/>
+        <Button x:Name="SpDef4" Content="4 SpDef" HorizontalAlignment="Left" Height="27" Margin="399,228,0,0" VerticalAlignment="Top" Width="59" Click="spdef_Click"/>
+        <Button x:Name="SpDef1" Content="1 SpDef" HorizontalAlignment="Left" Height="27" Margin="399,199,0,0" VerticalAlignment="Top" Width="59" Click="spdef_Click"/>
+        <Button x:Name="SpDef8" Content="8 SpDef" HorizontalAlignment="Left" Height="27" Margin="399,257,0,0" VerticalAlignment="Top" Width="59" Click="spdef_Click"/>
+        <Button x:Name="SpDef12" Content="12 SpDef" HorizontalAlignment="Left" Height="27" Margin="399,287,0,0" VerticalAlignment="Top" Width="59" Click="spdef_Click"/>
+        <Button x:Name="Speed4" Content="4 Speed" HorizontalAlignment="Left" Height="27" Margin="479,228,0,0" VerticalAlignment="Top" Width="59" Click="speed_Click"/>
+        <Button x:Name="Speed1" Content="1 Speed" HorizontalAlignment="Left" Height="27" Margin="479,199,0,0" VerticalAlignment="Top" Width="59" Click="speed_Click"/>
+        <Button x:Name="Speed8" Content="8 Speed" HorizontalAlignment="Left" Height="27" Margin="479,257,0,0" VerticalAlignment="Top" Width="59" Click="speed_Click"/>
+        <Button x:Name="Speed12" Content="12 Speed" HorizontalAlignment="Left" Height="27" Margin="479,287,0,0" VerticalAlignment="Top" Width="59" Click="speed_Click"/>
+        <Label x:Name="HPlabel" Content="HP" HorizontalAlignment="Left" Height="23" Margin="179,28,0,0" VerticalAlignment="Top" Width="31"/>
+        <Label x:Name="Atklabel" Content="Atk" HorizontalAlignment="Left" Height="23" Margin="176,51,0,0" VerticalAlignment="Top" Width="31"/>
+        <Label x:Name="Deflabel" Content="Def" HorizontalAlignment="Left" Height="23" Margin="176,79,0,0" VerticalAlignment="Top" Width="31"/>
+        <Label x:Name="Spatklabel" Content="SpAtk" HorizontalAlignment="Left" Height="26" Margin="162,101,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="Spdeflabel" Content="SpDef" HorizontalAlignment="Left" Height="26" Margin="161,127,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="Speedlabel" Content="Speed" HorizontalAlignment="Left" Height="26" Margin="162,153,0,0" VerticalAlignment="Top" Width="48"/>
+        <TextBox x:Name="Total" HorizontalAlignment="Left" Height="27" Margin="225,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="Totlabel" Content="Total" HorizontalAlignment="Left" Height="26" Margin="245,179,0,0" VerticalAlignment="Top" Width="66"/>
+
+    </Grid>
+</Window>
